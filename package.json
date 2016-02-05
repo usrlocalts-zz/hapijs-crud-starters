@@ -1,0 +1,15 @@
+{
+  "name": "hapi-api",
+  "version": "1.0.0",
+  "description": "A simple application that exposes REST APIs through Hapi server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "TS Shriram <tsshriram@live.in>",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^12.1.0",
+    "joi": "^7.2.2"
+  }
+}
