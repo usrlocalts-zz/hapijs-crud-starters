@@ -54,8 +54,9 @@ server.route({
 server.route({
   method: 'POST', path: '/posts', config: {
     handler: function (request, response) {
+      var id = posts.length==0 ? 1: posts[posts.length-1].id+1;
       var post = {
-        id: posts[posts.length - 1].id + 1, title: request.payload.title, content: request.payload.content
+        id: id, title: request.payload.title, content: request.payload.content
       };
       posts.push(post);
       response(post).code(201);
